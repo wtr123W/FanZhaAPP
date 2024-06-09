@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+    <!--标题栏-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:onClick="back"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="我要报案"
+            android:textColor="@color/colorWhite"
+            android:textSize="16dp" />
+    </RelativeLayout>
+    <!--表单布局-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:orientation="vertical">
+                <!--TextView 文本  html的p标签-->
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:text="姓名"
+                    android:textSize="14dp" />
+
+                <EditText
+                    android:id="@+id/et_name"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_border"
+                    android:padding="10dp"
+                    android:textSize="14dp"
+                    android:singleLine="true"
+                    android:hint="请输入姓名" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:orientation="vertical">
+                <!--TextView 文本  html的p标签-->
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:text="性别"
+                    android:textSize="14dp" />
+
+                <EditText
+                    android:id="@+id/et_sex"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_border"
+                    android:padding="10dp"
+                    android:textSize="14dp"
+                    android:singleLine="true"
+                    android:hint="请输入性别" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:orientation="vertical">
+                <!--TextView 文本  html的p标签-->
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:text="手机号"
+                    android:textSize="14dp" />
+
+                <EditText
+                    android:id="@+id/et_phone"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_border"
+                    android:padding="10dp"
+                    android:textSize="14dp"
+                    android:singleLine="true"
+                    android:hint="请输入手机号" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:orientation="vertical">
+                <!--TextView 文本  html的p标签-->
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:text="联系地址"
+                    android:textSize="14dp" />
+
+                <EditText
+                    android:id="@+id/et_address"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_border"
+                    android:padding="10dp"
+                    android:textSize="14dp"
+                    android:singleLine="true"
+                    android:hint="请输入联系地址" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:orientation="vertical">
+                <!--TextView 文本  html的p标签-->
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:text="案发地址"
+                    android:textSize="14dp" />
+
+                <EditText
+                    android:id="@+id/et_crimeAddress"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_border"
+                    android:padding="10dp"
+                    android:textSize="14dp"
+                    android:singleLine="true"
+                    android:hint="请输入案发地址" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:orientation="vertical">
+                <!--TextView 文本  html的p标签-->
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:text="案发时间"
+                    android:textSize="14dp" />
+
+                <EditText
+                    android:id="@+id/et_crimeTime"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_border"
+                    android:padding="10dp"
+                    android:textSize="14dp"
+                    android:singleLine="true"
+                    android:hint="请输入案发时间" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:orientation="vertical">
+                <!--TextView 文本  html的p标签-->
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:text="报案内容"
+                    android:textSize="14dp" />
+
+                <EditText
+                    android:id="@+id/et_content"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/btn_border"
+                    android:padding="10dp"
+                    android:textSize="14dp"
+                    android:gravity="top"
+                    android:singleLine="true"
+                    android:hint="请输入报案内容" />
+            </LinearLayout>
+
+            <Button
+                android:onClick="save"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/btn_border_fill"
+                android:textColor="@color/colorWhite"
+                android:layout_marginBottom="20dp"
+                android:textSize="22dp"
+                android:textAllCaps="false"
+                android:text="提交"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+    <!--标题栏-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:onClick="back"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="诈骗拦截"
+            android:textColor="@color/colorWhite"
+            android:textSize="16dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="诈骗电话拦截"
+            android:textColor="@color/colorBlack"
+            android:padding="20dp"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_logo" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryTint"
+            android:layout_marginTop="70dp"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <!--TextView 文本  html的p标签-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:text="拦截开关"
+                android:textColor="@color/colorWhite"
+                android:textSize="24sp" />
+            <Switch
+                android:id="@+id/enable"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
+            android:text="不明电话及时挂 可疑短信不要回"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBlack"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="30dp"
+            android:text="诈骗无处遁 安全入人心"/>
+    </LinearLayout>
+</LinearLayout>
